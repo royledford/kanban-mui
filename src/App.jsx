@@ -1,7 +1,12 @@
-import Home from './pages/Home/Home'
+import Home from './pages/Home'
+import ThemeProvider from './themes'
 
 export default function App() {
-  return <Home />
+  return (
+    <ThemeProvider>
+      <Home />
+    </ThemeProvider>
+  )
 }
 
 function wait(duration) {

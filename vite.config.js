@@ -30,6 +30,10 @@ export default defineConfig({
         replacement: fileURLToPath(new URL('./src', import.meta.url)),
       },
       {
+        find: '@pages',
+        replacement: fileURLToPath(new URL('./src/pages', import.meta.url)),
+      },
+      {
         find: '@services',
         replacement: fileURLToPath(new URL('./src/services', import.meta.url)),
       },
